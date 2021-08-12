@@ -109,6 +109,10 @@ html {
     
 }
 
+button {
+    position: relative;
+}
+
 button::before {
     content: '';
     position: absolute;
@@ -131,9 +135,6 @@ button:hover::before {
     bottom: -8px;
     left: -8px;
     right: -8px;
-
-
-
 }
 
 
@@ -331,8 +332,8 @@ main::before {
     bottom: 0;
     left: 50%;
     transform: translatex(-50% );
-    width: 60px;
-    height: 50px;
+    width: 70px;
+    height: 65px;
     background-color: var(--secondary-color);
     margin-top: 20px;
     cursor: pointer;
@@ -340,10 +341,23 @@ main::before {
 }
 
 .scroll-bottom  i {
-    font-size: 20px;
+    font-size: 25px;
     color: white;
+    transition: all 0.3s ease;
+
 }
 
+.scroll-bottom::before {
+    content: "";
+    display: none;
+}
+
+
+.scroll-bottom:hover i {
+    transform: translateY(20px);
+    
+
+}
 
 /* end landing */
 /* start services */
@@ -1183,9 +1197,7 @@ input[type="submit" ] {
 /* FOOTER */
 
 
-button {
-    position: relative;
-}
+
 
 footer {
     display: block;
@@ -1221,8 +1233,8 @@ footer .social-icons i:nth-child(3):hover {
 } 
 
 .scroll-top {
-    width: 60px;
-    height: 50px;
+    width: 70px;
+    height: 65px;
     background-color: var(--secondary-color);
     text-align: center;
     margin-top: 20px;
@@ -1231,6 +1243,20 @@ footer .social-icons i:nth-child(3):hover {
 }
 
 .scroll-top  i {
-    font-size: 20px;
+    font-size: 25px;
     color: white;
+    transition: all 0.3s ease;
+
+}
+
+.scroll-top::before {
+    content: "";
+    display: none;
+}
+
+
+.scroll-top:hover i {
+    transform: translateY(-20px);
+    
+
 }
